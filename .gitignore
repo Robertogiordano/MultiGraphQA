@@ -1,3 +1,4 @@
 *.docx#
 models
 vidore-benchmark
+data/images
