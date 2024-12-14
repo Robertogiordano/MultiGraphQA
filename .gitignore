@@ -3,3 +3,4 @@ models
 vidore-benchmark
 data/images
 *.DS_Store
+*.pdf
