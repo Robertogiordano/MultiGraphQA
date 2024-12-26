@@ -1,0 +1,70 @@
+{
+  "config":{
+    "query_token_id":"[unused0]",
+    "doc_token_id":"[unused1]",
+    "query_token":"[Q]",
+    "doc_token":"[D]",
+    "ncells":null,
+    "centroid_score_threshold":null,
+    "ndocs":null,
+    "load_index_with_mmap":false,
+    "index_path":null,
+    "index_bsize":32,
+    "nbits":4,
+    "kmeans_niters":20,
+    "resume":false,
+    "similarity":"cosine",
+    "bsize":64,
+    "accumsteps":1,
+    "lr":0.00001,
+    "maxsteps":400000,
+    "save_every":null,
+    "warmup":20000,
+    "warmup_bert":null,
+    "relu":false,
+    "nway":64,
+    "use_ib_negatives":true,
+    "reranker":false,
+    "distillation_alpha":1.0,
+    "ignore_scores":false,
+    "model_name":null,
+    "query_maxlen":32,
+    "attend_to_mask_tokens":false,
+    "interaction":"colbert",
+    "dim":128,
+    "doc_maxlen":256,
+    "mask_punctuation":true,
+    "checkpoint":"colbert-ir/colbertv2.0",
+    "triples":"/future/u/okhattab/root/unit/experiments/2021.10/downstream.distillation.round2.2_score/round2.nway6.cosine.ib/examples.64.json",
+    "collection":[
+      "list with 1251 elements starting with...",
+      [
+        "The graph in the image is a plot of the surface density of a hypothetical object as a function of its radius. The surface density is measured in units of \\(\\log \\Sigma [h^{-2} \\, \\text{Mpc}^{-2}]\\), where \\(h\\) is the Hubble constant. The graph has three different lines representing different scenarios:\n\n1. **Black Line (f_spec = 1)**: This line represents the surface density when the factor \\(f_{\\text{spec}}\\) is equal to 1. This line is a straight line with a negative slope, indicating that the surface density decreases as the radius increases.\n\n2. **Dashed Blue Line (f_spec \u2260 1, w/o corr.)**: This line represents the surface density when \\(f_{\\text{spec}}\\) is not equal to 1, but without any correction. This line also shows a negative slope, indicating a decrease in surface density with increasing radius.\n\n3. **Dotted Blue Line (f_spec \u2260 1, with corr.)**: This line represents the surface density when \\(f_{\\text{spec}}\\) is not equal to 1, with a correction applied.",
+        "3. **Dotted Blue Line (f_spec \u2260 1, with corr.)**: This line represents the surface density when \\(f_{\\text{spec}}\\) is not equal to 1, with a correction applied. This line has a slightly different slope compared to the dashed blue line, indicating that the correction has a small effect on the surface density.\n\nThe x-axis represents the radius in units of \\(h^{-1} \\, \\text{Mpc}\\), and the y-axis represents the surface density in units of \\(\\log \\Sigma [h^{-2} \\, \\text{Mpc}^{-2}]\\).\n\nThe graph shows that the surface density decreases as the radius increases, and the correction applied to the surface density has a small effect on the overall trend.",
+        "The image is a bar chart that compares the percentage of users in different categories across three different time periods: JUL10, FEB11, and FEB11Q. The x-axis represents the thread ID, ranging from 0 to 50. The y-axis represents the percentage of users in each category, with values ranging from 0 to 1. The categories are labeled as follows:\n\n- PO: People of interest\n- PiS: People interested in sports\n- UNK: Unknown\n\nThe chart shows the distribution of users across these categories for each time period. Here are the details for each time period:\n\n### JUL10\n- **PO**: Approximately 0.3% of users are classified as people of interest.\n- **PiS**: Approximately 0.1% of users are classified as people interested in sports.\n- **UNK**: Approximately 0.2% of users are classified as unknown.\n\n### FEB11\n- **PO**: Approximately 0.4% of users are classified as people of interest.\n- **PiS**: Approximately 0.2% of users are classified as people interested in sports.\n- **UNK**: Approximately 0.3% of users are classified as unknown."
+      ]
+    ],
+    "queries":"/future/u/okhattab/data/MSMARCO/queries.train.tsv",
+    "index_name":"my_index",
+    "overwrite":false,
+    "root":".ragatouille/",
+    "experiment":"colbert",
+    "index_root":null,
+    "name":"2024-12/15/01.52.11",
+    "rank":0,
+    "nranks":1,
+    "amp":true,
+    "gpus":1,
+    "avoid_fork_if_possible":false
+  },
+  "num_chunks":1,
+  "num_partitions":4096,
+  "num_embeddings":188749,
+  "avg_doclen":150.8784972022,
+  "RAGatouille":{
+    "index_config":{
+      "index_type":"PLAID",
+      "index_name":"my_index"
+    }
+  }
+}
